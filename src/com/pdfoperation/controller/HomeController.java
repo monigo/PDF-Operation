@@ -402,7 +402,7 @@ public class HomeController {
 		Session session=Session.getInstance(p, new SimpleAuthenticator("neerajgmsaini@gmail.com","######"));
 		Message msg=new MimeMessage(session);
 		msg.setFrom(new InternetAddress("neerajgmsaini@gmail.com"));
-		msg.setRecipient(Message.RecipientType.TO, new InternetAddress("neerajkumar25499@gmail.com"));
+		msg.setRecipient(Message.RecipientType.TO, new InternetAddress("tomail@gmail.com"));
 		msg.setSubject("email sending application");
 		msg.setContent("first automatic email", "text/html");	
 		Transport.send(msg);
